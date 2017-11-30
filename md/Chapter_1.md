@@ -1,6 +1,3 @@
-[原文链接](https://support.f5.com/kb/en-us/products/big-ip_ltm/manuals/product/ltm-concepts-11-5-0.html)
-
-
 # 第1章 介绍本地流量管理器（Local Traffic Manager）
 ## 1.1 什么是BIG-IP本地流量管理器？
 BIG-IP本地流量管理（Local Traffic Manager）控制流入或流出局域网LAN（包括内联网intranet）的网络流量。
@@ -99,5 +96,12 @@ BIG-IP Configuration utility 包括被称为network map的功能。***network ma
 
 
 ### network map显示
-Network Map呈现了在系统上定义的对象名称和状态的可视化层次结构，这些对象类型包括VS，Pools，Pool Member，Nodes以及iRules。Network Map能够显示上下文中的所有对象，并从顶部的VS开始。在屏幕顶部的Status，Type和Search设置决定了Network Map包含的对象。
+Network Map 显示了在系统上定义的对象名称和状态的可视化层次结构，这些对象类型包括 VS，Pools，Pool Member，Nodes以及iRules。Network Map能够显示上下文中的所有对象，并从顶部的VS开始。在屏幕顶部的 Status，Type 和 Search 设置决定了 Network Map 包含的对象。
 
+当你将光标放在 Network map 中的一个对象上时，系统将显示悬停文本，其中包含关于该对象的信息。当你把光标放在伴随对象的状态图标上时，系统将显示悬停文本，其中包含关于该对象状态信息，文本也将出现 在Pool 的 Properties 界面。
+
+系统按字母表顺序对对象进行排序，然后以层次化结构的方式组织依赖对象。
+
+由于 Network Map 在上下文中显示对象的方式，更新后的界面（screen）也会显示与这些对象相关的其他状态、类型和名字的对象。这是因为 Network Map 在显示对象时， 总是在上下文中显示那些依赖它们的对象，以及它们依赖的对象。
+
+例如，如果你有一个可用的 VS 和一个可用的 Pool，以及2个 Pool Member（其中1个可用，1个离线），然后从 Status 列表中选择 Offline，这将导致系统在上下文中显示离线（offline）的 Pool Member，以及可用的 VS 和 可用的 Pool。这是因为可用的 VS 和可用的 Pool 依赖于离线的 Pool Member。
