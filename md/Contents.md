@@ -1,7 +1,5 @@
-[原文链接](https://support.f5.com/kb/en-us/products/big-ip_ltm/manuals/product/ltm-concepts-11-5-0.html)
-
-
-[第1章 介绍本地流量管理器（Local Traffic Manager）](https://github.com/filefi/CN_BIG-IP_Local_Traffic_Manager_Concepts_v11.5.0/blob/master/md/Chapter_1.md)
+- [原文链接](https://support.f5.com/kb/en-us/products/big-ip_ltm/manuals/product/ltm-concepts-11-5-0.html)
+- [第1章 介绍本地流量管理器（Local Traffic Manager）](https://github.com/filefi/CN_BIG-IP_Local_Traffic_Manager_Concepts_v11.5.0/blob/master/md/Chapter_1.md)
 
 # 第2章 虚拟服务器（Virtual Server）
 
